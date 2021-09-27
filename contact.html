@@ -29,25 +29,34 @@
       </header>
       <!-- nav -->
       <!-- section 1 -->
-      <div class="flex flex-row w-full p-4 ml-40 mt-20 ">
-        <div class="w-1/2 bg-white rounded shadow-2xl p-8 m-4">
-            <form >
-                <div class="flex flex-col mb-4">
-                    <input class="border py-2 px-3 text-grey-800" type="text" placeholder="Full Name" id="fullname">
-                </div>
-                <div class="flex flex-col mb-4">
-                    <input class="border py-2 px-3 text-grey-800" type="email"  placeholder="Email" id="email">
-                </div>
-                <div class="flex flex-col mb-4">
-                    <input class="border py-2 px-3 text-grey-800" type="text"  placeholder="Subject" id="Subject">
-                </div>
-                <div class="flex flex-col mb-4">
-                    <textarea class="border py-2 px-3 text-grey-800" type="text"  placeholder="Message" id="Message"></textarea>
-                </div>
-                <button class=" block bg-blue-700 hover:bg-blue-800 text-white uppercase text-lg mx-auto p-2 rounded"" >Submit</button>
-            </form>
+      <section class="text-gray-600 body-font relative p-4 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 rounded-lg p-8 shadow-md">
+          
+            <div class="relative mb-4">
+              <input type="text" id="fullname" placeholder="Full Name" name="fullname" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <input type="email" id="email" placeholder="Email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <input type="text" id="subject" placeholder="Subject" name="subject" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <textarea id="message" name="message" placeholder="Message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+          </div>
+          <!-- <div class="lg:w-1/2 md:w-1/2  rounded-lg overflow-hidden p-10 flex items-end justify-start relative bg-no-repeat bg-contain" style="background-image: url('./SVG/contact.svg');">
+            
+          </div> -->
+          <div class="lg:w-1/2 md:w-1/2 rounded-lg overflow-hidden p-10 flex items-end justify-start relative  ">
+            
+            <img class="hidden md:block" src="./SVG/contact.svg" alt="" srcset="">
+          </div>
+
         </div>
-    </div>
+      </section>
       <!-- section 1 -->
 </body>
 </html>
