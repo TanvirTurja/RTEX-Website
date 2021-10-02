@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>RTEX</title>
 </head>
-<body>
+<body >
   <!-- nav -->
     <header class="text-gray-600 body-font bg-blue-100">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -27,10 +27,13 @@
         </div>
       </header>
       <!-- nav -->
+      
+    
       <!-- section 1 -->
-      <section class="text-gray-600 body-font px-8 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center xl:ml-24">
+      <section id="section1" class="text-gray-600 body-font px-14 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
+        <div class="container mx-auto flex  py-24 md:flex-row flex-col items-center ">
+         
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center xl:ml-32">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Lorem ipsum, dolor sit  
               <br class="hidden lg:inline-block">amet consectetur
             </h1>
@@ -39,21 +42,24 @@
             <div class="flex justify-center mt-4">
               <!-- <button class="inline-flex text-white font-medium bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-800 rounded text-lg">Get Started</button> -->
               <!-- <button class="ml-4 inline-flex font-medium text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn More</button> -->
-              <button class="px-4 py-2 rounded-md text-sm font-medium border-0 focus:outline-none focus:ring transition text-white bg-blue-700 hover:bg-blue-800 active:bg-blue-700 focus:ring-blue-700" type="submit">Get Started</button>
-              <button class="ml-4 px-4 py-2 rounded-md text-sm font-medium border-0 focus:outline-none focus:ring transition text-gray-700 bg-gray-100 hover:bg-gray-200 active:bg-blue-700 focus:ring-gray-500" type="submit">Learn More</button>
+              <button class="px-4 py-2 rounded-md text-sm font-medium border-0 focus:outline-none focus:ring transition text-white bg-blue-700 hover:bg-blue-800 active:bg-blue-700 focus:ring-blue-700" type="button" onclick="document.location='#section2'">Get Started</button>
+              <button  class="ml-4 px-4 py-2 rounded-md text-sm font-medium border-0 focus:outline-none focus:ring transition text-gray-700 bg-gray-100 hover:bg-gray-200 active:bg-blue-700 focus:ring-gray-500" type="button" onclick="document.location='whatwedo.html'" >Learn More</button>
 
-            </div>
+            
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 xl:mr-24">
+        </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full xl:mr-24">
             <img class="object-cover object-center rounded" alt="hero" src="./SVG/hero.svg">
             
           </div>
         </div>
       </section>
       <!-- section 1 -->
+      <div class="px-14">
+
       <!-- section 2 -->
-      <section class="text-gray-600 body-font px-8">
-        <div class="container px-5 py-24 mx-auto">
+      <section id="section2" class="text-gray-600 body-font ">
+        <div class="container py-24 mx-auto">
           <div class="flex flex-col">
            
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
@@ -61,9 +67,9 @@
               <p class="lg:w-2/3 mx-auto leading-relaxed text-base font-medium text-blue-600 ">Automation in healthcare is a concept that empowers the user to monitor their healthcare data within a secure and safe ecosystem.</p>
             </div>
           </div>
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="flex flex-wrap ">
             <div class="max-w-xs mx-auto bg-white rounded-lg  dark:bg-gray-800">
-              <div class="rounded-lg pl-20 h-64 pt-8  overflow-hidden shadow-lg hover:bg-blue-200">
+              <div class="rounded-lg p-10 h-64 w-64 pt-8 md:ml-8 overflow-hidden shadow-lg hover:bg-blue-200">
                 <img alt="content" class="" src="./SVG/dh.svg">
               </div>
               <h2 class="text-xl font-medium title-font text-gray-900 mt-5 text-center hover:text-blue-700">Digitizing Healthcare</h2>
@@ -71,7 +77,7 @@
              
             </div>
             <div class="max-w-xs mx-auto bg-white rounded-lg  dark:bg-gray-800">
-              <div class="rounded-lg pl-24 h-64 pt-8  overflow-hidden shadow-lg hover:bg-blue-200">
+              <div class="rounded-lg p-10 w-64 h-64 pl-16 pt-8 md:ml-8 overflow-hidden shadow-lg hover:bg-blue-200">
                 <img alt="content" class="" src="./SVG/ET.svg">
               </div>
               <h2 class="text-xl font-medium title-font text-gray-900 mt-5 text-center hover:text-blue-700">Establishing Transparency</h2>
@@ -79,7 +85,7 @@
               
             </div>
             <div class="max-w-xs mx-auto bg-white rounded-lg  dark:bg-gray-800">
-              <div class="rounded-lg pl-20 h-64 pt-8  overflow-hidden shadow-lg hover:bg-blue-200">
+              <div class="rounded-lg p-10 w-64 h-64 pl-14 pt-8 md:ml-8 lg:mt-4 overflow-hidden shadow-lg hover:bg-blue-200">
                 <img alt="content" class="" src="./SVG/EQ.svg">
               </div>
               <h2 class="text-xl font-medium title-font text-gray-900 mt-5 text-center hover:text-blue-700">Enriching Quality</h2>
@@ -91,10 +97,10 @@
       </section>
       <!-- section 2 -->
       <!-- section 3 -->
-      <section class="text-gray-600 body-font px-8">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <section class="text-gray-600 body-font ">
+        <div class="container mx-auto flex  py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="./SVG/AFD.svg">
+            <img class="object-cover object-center rounded ml-2 w-64 h-44 md:w-full md:h-full md:ml-2 lg:w-96 lg:h-96 lg:ml-16 xl:w-72 xl:h-72 xl:ml-24 " alt="hero" src="./SVG/AFD.svg">
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Automation For Doctors
@@ -108,8 +114,8 @@
       </section>
       <!-- section 3 -->
       <!-- section 4 -->
-      <section class="text-gray-600 body-font px-8">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <section class="text-gray-600 body-font ">
+        <div class="container mx-auto flex py-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Automation for Patients</h1>
             <p class="mb-8 leading-relaxed">Carrying bundles of medical files is always a hassle and for that, we came up with a more convenient solution. The patients can log into a portal where they can safe-keep and monitor their medical information.
@@ -118,16 +124,16 @@
            
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="./SVG/AFP.svg">
+            <img class="object-cover object-center rounded ml-2 w-64 h-44 md:w-full md:h-full md:ml-0 lg:p-10 lg:w-full lg:h-full lg:ml-0 xl:p-16 xl:w-full xl:h-full xl:ml-16" alt="hero" src="./SVG/AFP.svg">
           </div>
         </div>
       </section>
       <!-- section 4 -->
       <!-- section 5 -->
-      <section class="text-gray-600 body-font px-8">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <section class="text-gray-600 body-font ">
+        <div class="container mx-auto flex py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="./SVG/MHA.svg">
+            <img class="object-cover object-center rounded ml-2 w-64 h-44 md:w-full md:h-full md:ml-2 lg:p-6 lg:w-full lg:h-full lg:ml-4 xl:p-12 xl:w-full xl:h-full xl:ml-4" alt="hero" src="./SVG/MHA.svg">
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Managing Hospital Administration
@@ -142,7 +148,7 @@
       </section>
       <!-- section 5 -->
       <!-- section 6 -->
-      <section class="text-gray-600 body-font px-8">
+      <section class="text-gray-600 body-font ">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
             <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 ">Our services</h1>
@@ -184,7 +190,7 @@
 
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 ">
             <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <div class="w-20 h-20 mt-4 md:mt-0 lg:mt-0  xl:mt-0 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                <img src="./SVG/CBMS.svg" alt="DP" class="hover:shadow-md rounded-2xl" >
               </div>
               <div class="flex-grow">
@@ -218,9 +224,9 @@
       </section>
       <!-- section 6 -->
       <!-- section 7 -->
-      <section class="text-gray-600 body-font px-8">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="./SVG/OV.svg">
+      <section class="text-gray-600 body-font ">
+        <div class="container mx-auto flex py-24 items-center justify-center flex-col">
+          <img class="lg:w-full lg:px-24 w-full mb-10 md:w-full xl:w-full xl:px-80 xl:py-5 object-cover object-center rounded" alt="hero" src="./SVG/OV.svg">
           <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Our Vision</h1>
             <p class="mb-8 leading-relaxed"> As our main motto is “Automate, Accelerate,” we aim to be a leading force in helping companies to accelerate their business processes, especially in the healthcare system using Machine Learning and AI.
@@ -231,9 +237,9 @@
       </section>
       <!-- section 7 -->
        <!-- section 8 -->
-       <section class="text-gray-600 body-font px-8">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="./SVG/OM.svg">
+       <section class="text-gray-600 body-font ">
+        <div class="container mx-auto flex py-24 items-center justify-center flex-col">
+          <img class="lg:w-full lg:px-16 w-full mb-10 md:w-full md:ml-14 xl:w-full xl:px-72 xl:py-5 object-cover object-center rounded" alt="hero" src="./SVG/OM.svg">
           <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Our Mission</h1>
             <p class="mb-8 leading-relaxed"> We believe in teamwork, integrity and innovation. With a strong focus on creating and realizing client value along with maintaining accountability and transparency in business, we work on providing sustainable solutions using automation.
@@ -245,8 +251,8 @@
       <!-- section 8-->
      
       <!-- section 9 -->
-      <section class="px-8 mb-8">
-      <div class="container mx-auto  lg:px-20" >
+      <section class=" mb-8">
+      <div class="container mx-auto " >
           <div class="text-center mb-20">
             <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 ">Testimonials</h1>
             
@@ -287,36 +293,36 @@
                 </div>
             </div> -->
 
-            <div class="md:flex md:justify-center md:space-x-8 md:px-14">
+            <div class="md:flex md:justify-center md:space-x-8 lg:space-x-20 ">
               <!-- box-1 -->
-              <div class="mt-20 mb-60 py-4 px-4 bg-whit w-72 bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
+              <div class="mt-20 mb-20 py-2 bg-whit w-56 xl:w-72 md:mt-20 md:mb-60 lg:mt-20 lg:mb-60  bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
                 <div class="w-sm ">
-                  <img class="w-24 lg:ml-10 md:ml-8 xl:ml-20 " src="./SVG/D1.svg" alt="" />
+                  <img class="w-24 lg:ml-16 md:ml-12 xl:ml-24 ml-14" src="./SVG/D1.svg" alt="" />
                   <div class="mt-4  text-center">
                     <h1 class="text-xl font-bold">Dr. Dan Joe</h1>
-                    <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="mt-4 text-gray-600 px-2 text-left xl:p-4 lg:p-3 md:p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                   </div>
                 </div>
               </div>
         
               <!-- box-2 -->
-              <div class="mt-40 mb-40 py-4 px-4 bg-whit w-72 bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
+              <div class="mt-20 mb-20 py-2 bg-whit w-56 xl:w-72 md:mt-40 md:mb-40 lg:mt-40 lg:mb-40 bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
                 <div class="w-sm">
-                  <img class="w-24 lg:ml-10 md:ml-8 xl:ml-20 " src="./SVG/D1.svg" alt="" />
+                  <img class="w-24 lg:ml-16 md:ml-12 xl:ml-24 ml-14" src="./SVG/D1.svg" alt="" />
                   <div class="mt-4  text-center">
                     <h1 class="text-xl font-bold">Dr. Dan Joe</h1>
-                    <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="mt-4 text-gray-600 px-2 text-left xl:p-4 lg:p-3 md:p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                   </div>
                 </div>
               </div>
         
               <!-- box-3 -->
-              <div class="mt-60 mb-20 py-4 px-4 bg-whit w-72 bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
+              <div class="mt-20 mb-20 py-2 bg-whit w-56 xl:w-72 md:mt-60 md:mb-20 lg:mt-60 lg:mb-20 bg-blue-200 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 hover:bg-white">
                 <div class="w-sm">
-                  <img class="w-24 lg:ml-10 md:ml-8 xl:ml-20 " src="./SVG/D1.svg" alt="" />   
+                  <img class="w-24 lg:ml-16 md:ml-12 xl:ml-24 ml-14" src="./SVG/D1.svg" alt="" />   
                   <div class="mt-4  text-center">
                     <h1 class="text-xl font-bold">Dr. Dan Joe</h1>
-                    <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="mt-4 text-gray-600 px-2 text-left xl:p-4 lg:p-3 md:p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                   </div>
                 </div>
               </div>
@@ -325,10 +331,10 @@
         </div>
       </section>
       <!-- section 9 -->
-     
+     </div>
       <!-- footer -->
-      <footer class="">
-        <div class="text-gray-600 bg-no-repeat bg-cover p-2 lg:px-5" style="background-image: url('./SVG/fi.svg');">
+      <footer >
+        <div class="text-gray-600 bg-no-repeat bg-cover  lg:px-2 " style="background-image: url('./SVG/fi.svg');">
 
        
         <div class="container px-5 py-48 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
